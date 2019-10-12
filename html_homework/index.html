@@ -1,0 +1,158 @@
+<!--John Salame-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  	<title>About Me (Bootstrap)</title>
+  	<style>
+  	  tr
+  	  {
+  	  	text-align: center;
+  	  }
+  	  td
+  	  {
+  	  	padding: 10px;
+  	  }
+  	</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="home.html">
+      <img class="rounded-circle" src="../resources/img/cu_boulder_logo.jpg" alt="" width="30" height="30">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="mypage.html">About Me (HTML Version)</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="form.html">Form (just for looks, nonfunctional) <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Logout</button>
+      </div>
+      </div>
+    </nav>
+    <div class="container">
+      <br/>
+  	  <h1>Salame, John - <small class="text-secondary">Software Development Tools and Methods</small></h1>
+    </div>
+
+    <br/>
+
+    <div class="card">
+      <div class="card-body">
+  	    <p class="card-text">
+          Hi, I'm John.<br/>I am a Course Assistant for CSCI 2270 Data Structures. I enjoy rock climbing at the rec center. My favorite gaming system is the Nintendo Switch.<br/>I was first exposed to programming when I saw my brother learning Python on codecademy.com and he encouraged me to learn as well. My interest only grew from there. When I took programming classes in high school, I knew Computer Science was for me.<br/>To me, interpreting code is like solving a puzzle; each part you figure out opens up new possibilities. This is what I enjoy most about programming.
+        </p>
+      </div>
+    </div>
+
+    <br/>
+
+    <h2 style="text-align:center;">My Professional Profile</h2>
+    <br/>
+
+    <a class = "btn btn-info" style="margin-left:30px;" href="https://github.com/John-Salame" target="_blank">
+      My GitHub Account:
+    </a>
+
+    <br/>
+    <br/>
+    <img src="boat.JPG" class="rounded-circle" alt="Me on a boat with my brother" width="480px" height="640px"/>
+    <h3 style="margin-left:60px;">Me on a boat with my brother</h3>
+    <br/>
+    <br/>
+    <img src="monkey.JPG" class="rounded-circle" alt="A picture of a Spider Monkey skeleton" width="360px" height="480px"/>
+    <h3>Me after too much rock climbing</h3>
+    <br/>
+    <br/>
+    <h3 style="margin-left:500px;">My Favorite Projects</h3>
+    <br/>
+    <table class="table">
+      <tr>
+      	<th>Name of Project</th>
+      	<th>Technologies Used</th>
+      </tr>
+      <tr>
+      	<td>John's Quest</td>
+      	<td>C++</td>
+      </tr>
+      <tr>
+      	<td>2D First Degree Differential Equation Grapher</td>
+      	<td>HTML, p5.js</td>
+      </tr>
+      <tr>
+      	<td>Cannon Chaos (video game I probably lost the files to)</td>
+      	<td>Unity3D</td>
+      </tr>
+    </table>
+
+    <br/>
+
+    <div class="row">
+      <button type="button" class="col" data-toggle="collapse" data-target="#country_list">Countries Traveled</button>
+      <button type="button" class="col" data-toggle="collapse" data-target="#interests">My Interests</button>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <table class="collapse table table-bordered table-sm" id="country_list">
+          <tr><td>USA</td></tr>
+          <tr><td>Lebanon</td></tr>
+        </table>
+      </div>
+
+      <div class="col">
+        <table class="collapse table table-bordered table-sm" id="interests">
+          <tr><td>Rock Climbing</td></tr>
+           <tr><td>Programming</td></tr>
+          <tr><td>Gaming</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Click Me!</button>
+
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h4 class="modal-title">Hi!</h4>
+            <button type="button" class="close" data-dismiss="modal">&times</button>
+          </div>
+
+          <div class="modal-body">
+            Thank you for viewing my website!
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

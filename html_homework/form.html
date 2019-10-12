@@ -1,0 +1,127 @@
+<!--John Salame-->
+
+<!DOCTYPE html>
+  <html>
+    <header>
+	  <title>Form</title>
+      <!-- Latest compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	  <!-- jQuery library -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	  <!-- Popper JS -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	  <!-- Latest compiled JavaScript -->
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </header>
+
+    <body style="padding:20px;">
+      <h1>Add New Article</h1>
+      <br/>
+
+      <form>
+      	<div class="form-group">
+      	  <label for="title"><h3>Article Title</h3></label>
+      	  <input type="text" class="form-control" name="title" id="title" placeholder="Title"/>
+      	</div>
+      	<div class="form-group">
+      	  <label for="author"><h3>Author Name</h3></label>
+      	  <input type="text" class="form-control" name="author" id="author" placeholder="Name"/>
+      	</div>
+      	<div class="form-row">
+    	  <div class="col">
+    	  	<label for="file_picker"><h3>Upload Files:</h3></label>
+    	  	<input type="file" class="form-control-file" id="file_picker"/>
+    	  </div>
+
+    	  <div class="col"></div>
+
+    	  <div class="col">
+    	  	<label for="page_selector"><h3>Pages</h3></label>
+    	  	<select class="form-control" id="page_selector">
+    	  	  <option>Academics</option>
+    	  	  <option>Projects</option>
+    	  	  <option>Videos</option>
+    	  	</select>
+    	  </div>
+      	</div>
+
+      	<br/>
+
+      	<div class="form-group">
+      	  <label for="article_text"><h3>Article Text</h3></label>
+      	  <textarea class="form-control" id="article_text" rows="10"></textarea>
+      	</div>
+
+
+      	<!--Start of inline form-check-->
+      	<div class="form-row">
+      	  <label for="langs" class="col"><h3>Select Tags</h3></label>
+      	  <label for="public" class="col"><h3>Visiblity</h3></label>
+      	</div>
+
+		<div class="form-row">
+			<div class="col">
+		        <div class="form-check form-check-inline">
+		          <input id="langs" type="checkbox" class="form-check-input" id="C++" value="C++">
+		       	  <label class="form-check-label" for="C++">C++</label>
+			    </div>
+			    <div class="form-check form-check-inline position-static">
+			      <input type="checkbox" class="form-check-input" id="js" value="js">
+			      <label class="form-check-label" for="js">Javascript</label>
+			    </div>
+			    <div class="form-check form-check-inline position-static">
+			      <input type="checkbox" class="form-check-input" id="Java" value="Java">
+			      <label class="form-check-label" for="Java">Java</label>
+			    </div>
+			    <div class="form-check form-check-inline position-static">
+			      <input type="checkbox" class="form-check-input" id="C" value="C">
+			      <label class="form-check-label" for="C">C</label>
+			    </div>
+			    <div class="form-check form-check-inline position-static">
+			      <input type="checkbox" class="form-check-input" id="HTML" value="HTML">
+			      <label class="form-check-label" for="HTML">HTML</label>
+			    </div>
+			</div>
+
+			<!--<div class="col form-check-inline">-->
+		    <div class="col">
+		      <div class="btn btn-group-toggle form-check form-check-inline" data-toggle="buttons">
+			    <label class="btn btn-secondary active">
+		          <input type="radio" class="form-check-input" name="visibility" id="public" value="Public" autocomplete="off">Public
+		        </label>
+		        <!--<label class="form-check-label" for="public">Public</label>-->
+		        <label class="btn btn-secondary">
+		          <input type="radio" class="form-check-input" name="visibility" id="private" value="Private" autocomplete="off">Private
+		        </label>
+		        <!--<label class="form-check-label" for="private">Private</label>-->
+		      </div>
+	  	    </div>
+			
+		</div>
+
+		<br/>
+
+	    <!--Login (part 6)-->
+	    <label for="login"><h3>Login to Finish Submitting</h3></label>
+	    <div class="form-group" id="login">
+	      <div class="form-row">
+	        <input type="text" class="col form-control" name="username" placeholder="Username">
+	        <input type="password" class="col form-control" name="password" placeholder="Password">
+	      </div>
+	      
+	      <input type="checkbox" class="form-check form-check-inline" id="remember" unchecked>
+	      <label for="remember">Remember Me</label>
+	      
+	      <div class="form-row">
+	        <button type="submit" class=" col-sm-1 btn btn-primary">Submit</button>
+	      </div>
+	      
+	    </div>
+
+      </form>
+
+    </body>
+  </html>
